@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Weather App</h1>
+</header>
+<div class="main">
+    <div id="search">
+        <label for="city" id='lCity'>City Name</label>
+        <input type="text" id="city" autocomplete="off">
+        <button type="button">Show Weather!</button>
+    </div>
+    <div id="load">Loading...</div>
+    <div id="weather">
+        <h1 id="weatherCity">City Name</h1>
+
+        <img src="http://openweathermap.org/img/w/11d.png" id='ic'><div id="weatherDescription"> Weather Description</div>
+         <div id="weatherTemperature">Temperature</div>
+         <div id='mintemp'> Min Temp: </div>
+         <div id='maxtemp'> Max Temp: </div>
+        <div id="weatherTemperatureMin">5°C</div>
+        <div id="weatherTemperatureMax">8°C</div>
+
+        <div id='cloudText'> Cloudiness: </div>
+
+        <div class="cloud">
+        <img src="clouds.png" width="43px" id='cloudImg'>
+        <div id="weatherCloud">25%</div>
+        </div>
+
+        <div id='humidityText'>Humidity:</div>
+        <div id='weatherHumidity'>33%</div>
+
+         <div id='pressureText'>Pressure:</div>
+        <div id='weatherPressure'>61%</div>
+
+        <div id='windSText'>Wind speed:</div>
+        <div id='weatherWindS'>7.2</div>
+
+        <div id='windDText'>Wind direction:</div>
+        <div id='weatherWindD'>9.1</div>
+    </div>
+</div>
+
+<script src='init.js'></script>
+<script src='weather-data.js'></script>
+<script src='script.js'></script>
+</body>
+</html>
